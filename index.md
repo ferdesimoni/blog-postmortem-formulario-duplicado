@@ -28,8 +28,8 @@ Un bug de UX simple (falta de feedback visual en un botón) puede convertirse en
 La idempotencia no es solo un concepto de APIs "serias" — cualquier formulario público debería contemplarla.
 Reproducir el bug antes de arreglarlo evitó que aplicara un fix a ciegas que no resolviera la causa real.
 Evidencia de control de versiones
-Issue: [Post-Mortem] Formulario de contacto envía emails duplicados — [enlace al issue]
-Pull Request con la solución y esta entrada de blog: [enlace al PR]
-Commits relevantes: [enlace a commits]
+Issue: [Post-Mortem] Formulario de contacto envía emails duplicados — (https://github.com/ferdesimoni/blog-postmortem-formulario-duplicado/issues/1)
+Pull Request con la solución y esta entrada de blog: (https://github.com/ferdesimoni/blog-postmortem-formulario-duplicado/compare/fix/formulario-emails-duplicados?expand=1)
+
 Reflexión sobre feedback radicalmente sincero
 Al documentar este incidente, evité el impulso de suavizar la causa raíz (mi propio código no tenía protección básica de doble envío) solo para "quedar mejor" en el post. Aplicar feedback radicalmente sincero conmigo mismo significó ser directo sobre el error —sin protección ni en frontend ni en backend, algo evitable desde el diseño— pero también constructivo: en vez de quedarme en la autocrítica, prioricé documentar la causa con evidencia y transformar el incidente en una mejora concreta (idempotencia + test automatizado) que previene que se repita. Ese equilibrio entre honestidad y orientación a la mejora es, justamente, lo que hace útil a un post-mortem.
